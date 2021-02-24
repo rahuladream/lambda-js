@@ -19,4 +19,4 @@ Style Guides
 
 ## Table of Contents
 
-Day 1. [Data Types](./Types/Readme.md)
+1. [Data Types](./Types/Readme.md)
