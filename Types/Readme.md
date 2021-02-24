@@ -78,6 +78,48 @@ var answer2 = "He is called 'Johnny'";    // Single quotes inside double quotes
 var answer3 = 'He is called "Johnny"';    // Double quotes inside single quotes
 ```
 
+#### 1.6.1 String Methods
+
+```js
+let string = 'JavaScript'
+let firstLetter = string[0]                 // J
+
+// toUpperCase()
+let string = 'JavaScript'
+string.toUpperCase()                        // JAVASCRIPT
+
+// toLowerCase()
+let string = 'JavasCript'
+string.toLowerCase()                        // javascript
+
+// substr()
+let string = 'JavaScript'
+string.substr(4,6)                          // Script
+
+// substring()
+let string = 'JavaScript'
+string.substring(0,4)                       // Java
+
+// split()
+let string = '30 Days Of JavaScript'
+string.split()                              // Changes to an array -> ["30 Days Of JavaScript"]
+string.split(' ')                           // Split to an array at space -> ["30", "Days", "Of", "JavaScript"]
+
+// includes()
+let string = '30 Days Of JavaScript'
+string.includes('Days')                     // true
+string.includes('days')                     // false - it is case sensitive!
+
+// charAt()
+let string = '30 Days Of JavaScript'
+string.charAt(0)                            // 3
+
+// search()
+let string = 'I love JavaScript. If you do not love JavaScript what else can you love'
+string.search('love')                       // 2
+```
+
+
 ### 1.7 Numbers
 
 JavaScript has only one type of numbers. Numbers can be written with, or without decimals:
@@ -209,4 +251,74 @@ typeof {name:'John', age:34} // Returns "object"
 typeof [1,2,3,4]             // Returns "object" (not "array", see note below)
 typeof null                  // Returns "object"
 typeof function myFunc(){}   // Returns "function"
+```
+
+### 1.17 Math Object
+
+Javascript also provide Math object with lot of methods to work with numbers;
+
+```js
+Math.PI                     // 3.1415
+Math.round(PI)              // 3 to the ground values
+Math.round(9.91)            // 10 nearest ground values
+
+Math.min(-5,3,4,20)         // -5
+Math.max(-5,3,5,20)         // 20
+
+Math.random()               // generate random 0 to 0.9999 value
+
+Math.abs(-10)               // 10
+Math.sqrt(100)              // 10
+
+Math.pow(3,2)               // 9 i.e 3 power 2
+Math.E                      // 2.178
+
+Math.log(2)                 // 0.69314
+Math.log(10)                // 2.3025
+
+Math.sin(0)                 // 0
+Math.sin(60)                // -0.3048
+
+```
+
+### 1.18 String Concatention
+
+Connecting two or more strings together is called concatenation. Using the strings declared in the previous String section:
+
+```js
+let first_name = 'Gandhi'
+let last_name = 'Rahul'
+
+let full_name = last_name + first_name
+'Rahul Gandhi'
+```
+
+### 1.19 Template Strings/Literals
+
+To create a template strings, we use `two back-ticks`. We can inject data as expressions inside a template string. 
+
+To inject data, we enclose the expression with a `curly bracket({})` preceded by a `$ sign`.
+
+```js
+let name = 'Rajnandini'
+let place = 'Varanasi'
+let dob = '10-08-1996'
+
+`Hi 👋️ Myself ${name} and I live in ${place}`
+```
+
+### 1.20 Data Type Casting
+
+Converting one data type to another data type. We use `parseInt(), parseFloat(), Number(), + sign, str()`.
+
+```js
+// String to Int
+let num = '10'
+let numInt = parseInt(num)
+numInt                                    // 10
+
+// String to float
+let num = '9.81'
+let numFloat = parseFloat(num)
+numFloat                                  // 9.81
 ```
