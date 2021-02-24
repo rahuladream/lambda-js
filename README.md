@@ -17,6 +17,13 @@ Style Guides
   - [CSS-in-JavaScript](css-in-javascript/)
   - [CSS & Sass](https://github.com/airbnb/css)
 
+---
+**NOTE**
+
+Table of contents index indicate the day of challenge.
+
+---
+
 ## Table of Contents
 
 1. [Data Types](./Types/Readme.md)
