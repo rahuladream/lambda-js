@@ -322,3 +322,10 @@ let num = '9.81'
 let numFloat = parseFloat(num)
 numFloat                                  // 9.81
 ```
+ 
+ ## Javascript Day1 Practice Quiz 👨‍💻️
+
+ 1. Which of the following is/are strings?
+    1. [] 4 
+    2. [] 4.0
+    3. [] '4'
