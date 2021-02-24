@@ -1,5 +1,5 @@
 <div align="center">
-  <h1> 40 Days Of JavaScript Challenge</h1>
+  <h1> 40 Days Of 🧑‍🚀 JavaScript Challenge 🧑‍💻</h1>
   <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/rahuladream/">
   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
@@ -42,6 +42,6 @@ Table of contents index indicate the day of challenge.
 
 ---
 
-## Table of Contents
+## 🗓️ Table of Contents
 
 1. [Data Types](./Types/Readme.md)
