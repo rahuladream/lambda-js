@@ -1,10 +1,5 @@
 ## 40 Days Of JavaScript
 
-[![WTFPL 2.0][license-image]][license-url]
-[![NPM version][npm-image]][npm-url]
-[![Patreon][patreon-image]][patreon-url]
-[![Buy Me A Coffee][bmc-image]][bmc-url]
-
 > A list of 40 days javascript challenge
 
 JavaScript is a great language. It has a simple syntax, large ecosystem and, what is most important, a great community.
