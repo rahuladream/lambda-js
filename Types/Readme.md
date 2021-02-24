@@ -325,7 +325,7 @@ numFloat                                  // 9.81
  
  ## Javascript Day1 Practice Quiz 👨‍💻️
 
->>**The following languages are in the Indo-European family:**
+>>**The following languages are in the Indo-European family:**<<
        [x] Urdu
        [ ] Finnish
        [x] Marathi
