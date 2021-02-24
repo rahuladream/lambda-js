@@ -325,7 +325,8 @@ numFloat                                  // 9.81
  
  ## Javascript Day1 Practice Quiz 👨‍💻️
 
- 1. Which of the following is/are strings?
-    1. [] 4 
-    2. [] 4.0
-    3. [] '4'
+***[Your question here] (html comment removed: - Prompt )
+- ***[Answer 1][answersite]
+- ***[Answer 2][answersite]
+- ***[Answer 3][answersite]
+- ***[Etc][answersite]
