@@ -322,52 +322,7 @@ let num = '9.81'
 let numFloat = parseFloat(num)
 numFloat                                  // 9.81
 ```
- 
- ## Javascript Interview 👨‍💻️ Questions Data Types 
 
-1. What are the **falsy values** in Javascript?
+🍻🎉💊 Congrats for completing **Day 1** 🍻🎉💊
 
-```js
-Following are the falsy values
-- ''
-- 0
-- null
-- undefined
-- false
-- NaN
-```
-
-2. How to check if value is falsy?
-
-```js
-Use the !! operator or Boolean function to check if they’re falsy.
-If a value is falsy, then both will return false.
-
-!!0                     // false
-```
-
-3. What are Wrapper Objects?
-
-```js
-Wrapper objects are objects that are created from constructors that return primitive values but have the type 'object' if it’s a number or a string. Symbols and BigInt have their own types.
-
-Primitive values are temporarily converted to wrapper objects to call methods.
-
-'foo'.toUpperCase()
-
-Then we get `FOO`. It works by converting the 'foo' literal to an object and then call the toUpperCase() method on it.
-```
-
-4. What is the difference between Implicit and Explicit Coercian
-
-```js
-
-Implicit coercion means that the JavaScript interpreter converts a piece of data from one type to another without explicitly calling a method.
-
-1 + '2'                 // 12
-
-Explicit conversion is done by calling a method or using an operator to convert a type.
-
-+'1' + +'2'             // 3
-gets us 3 since we have '1' and '2' are both converted to numbers by the unary + operator.
-```
+if you are preparing for interview have a look at [interview questions of data types](./InterviewQuestion.md) 
