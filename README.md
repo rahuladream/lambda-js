@@ -8,4 +8,4 @@ JavaScript is a great language. It has a simple syntax, large ecosystem and, wha
 
 | # Day |                                                                       Topics                                                                        |
 | ----- | :-------------------------------------------------------------------------------------------------------------------------------------------------: |
-| 01    |                                                             [Introduction]()                                                                        |
+| 01    |                                              [Data Types](./Types/Readme.md)                                                                        |
