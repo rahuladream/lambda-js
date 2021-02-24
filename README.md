@@ -38,7 +38,7 @@ Style Guides
 ---
 **NOTE**
 
-Table of contents index indicate the day of challenge.
+Table of contents index indicates the day of the challenge.
 
 ---
 
