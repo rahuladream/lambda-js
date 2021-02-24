@@ -1,4 +1,26 @@
-## 40 Days Of JavaScript
+<div align="center">
+  <h1> 40 Days Of JavaScript Challenge</h1>
+  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/rahuladream/">
+  <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
+  </a>
+  <a class="header-badge" target="_blank" href="https://twitter.com/rahuladream">
+  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/rahuladream?style=social">
+  </a>
+
+<sub>Author:
+<a href="https://www.linkedin.com/in/rahuladream/" target="_blank">Rahul Singh</a><br>
+<small> Feb, 2020</small>
+</sub>
+
+  <div>
+
+🇬🇧 [English](./README.md)
+🇮🇳 [Hindi](./Hindi/Readme.md)
+
+  </div>
+
+</div>
+</div>
 
 > A list of 40 days javascript challenge
 
