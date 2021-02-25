@@ -1,4 +1,7 @@
-## 1. Javascript Data Types
+<div align="center">
+  <h1> Javascript Data Types </h1>
+ </div>
+
 
 JavaScript variables can hold many data types: numbers, strings, objects and more:
 
