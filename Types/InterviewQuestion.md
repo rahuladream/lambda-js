@@ -1,6 +1,6 @@
 <div align="center">
   <h1> Javascript Interview 👨‍💻️ Questions Data Types </h1>
-  <div>
+ </div>
 
 ### 1. What are the **falsy values** in Javascript?
 
