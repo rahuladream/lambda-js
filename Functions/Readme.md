@@ -1,5 +1,5 @@
 <div align="center">
-  <h1> Javascript Functions </h1>
+  <h1> Javascript Functions 😹️ </h1>
  </div>
 
 ### 1. Defination
@@ -212,6 +212,6 @@ changeToUpperCase(countries)
 ```
 
 
-🍻🎉💊 Congrats for completing **Day 1** 🍻🎉💊
+🍻🎉💊 Congrats for completing **Day 2** 🍻🎉💊
 
-if you are preparing for interview have a look at [interview questions of data types](./InterviewQuestion.md) 
+if you are preparing for interview have a look at [interview questions of Functions](./InterviewQuestion.md) 

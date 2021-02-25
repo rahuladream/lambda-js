@@ -45,3 +45,4 @@ Table of contents index indicates the day of the challenge.
 ## 🗓️ Table of Contents
 
 1. [Data Types](./Types/Readme.md)
+2. [Functions](./Functions/Readme.md)
