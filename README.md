@@ -46,3 +46,4 @@ Table of contents index indicates the day of the challenge.
 
 1. [Data Types](./Types/Readme.md)
 2. [Functions](./Functions/Readme.md)
+3. [Objects](./Objects/Readme.md)
