@@ -1,5 +1,5 @@
 <div align="center">
-  <h1> Javascript Objects 😹️ </h1>
+  <h1> 🛌 🔪 Javascript Objects 💣  🛀   </h1>
  </div>
 
 #### 1. Objects, Properties, and Methods
@@ -187,7 +187,7 @@ copyPerson.hasOwnProperty('firstName')
 true
 ```
 
-### Some style guide
+## Some style guide
 
 ##### 1.10 Use the literal syntax for object creation `eslint`
 
