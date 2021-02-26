@@ -116,7 +116,184 @@ var z = new Boolean();       // Declares z as a Boolean object
 
 Avoid `String`, `Number`, and `Boolean objects`. They complicate your code and slow down execution speed.
 
+#### 1.8 Setting new key for an Object
 
+An object is a mutable data structure and we can modify the content of an object after it gets created.
+
+```js
+var person = {
+  firstName: "Rahul",
+  lastName : "Singh",
+  id       : 1,
+  fullName : function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+
+// Setting a new key here
+person.country = 'India'
+person.title = 'Engineer'
+person.isMarried = true
+
+// also you create complete new function as key
+person.getPersonInfo = function() {
+    let statement = `${fullName} is a ${this.title}.\nHe lives in ${this.country}.\nHe ${isMarried ? 'Married' : 'Not Married'}.`
+    return statement
+}
+```
+#### 1.9 Different Object Methods Available
+
+```js
+var person = {
+  firstName: "Rahul",
+  lastName : "Singh",
+  id       : 1,
+  fullName : function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+
+// Object methods
+1. Object.assign
+2. Object.values
+3. Object.entries
+4. Object.hasOwnProperty()
+
+// Let's use object.assign to assign whole value
+
+const clonePerson = Object.assign({}, person)
+```
+
+###### 1.9.1 Getting object keys 
+
+Object.keys: To get the keys or properties of an object as an array
+
+```js
+Object.keys(clonePerson)
+// Output
+['firstName', 'lastName', 'id', 'fullName']
+```
+
+hasOwnProperty: To check if a specific key or property exist in an object
+
+###### 1.9.2 Checking properties using hasOwnProperty()
+
+hasOwnProperty: To check if a specific key or property exist in an object
+
+```js
+copyPerson.hasOwnProperty('firstName')
+
+// Output
+true
+```
+
+### Some style guide
+
+##### 1.10 Use the literal syntax for object creation `eslint`
+
+```js
+// bad
+const item = new Object(); 
+
+// good
+const item = {};
+```
+
+##### 1.11 Use computed property names when creating objects with dynamic property names.
+
+Why? They allow you to define all the properties of an object in one place.
+
+```js
+function getKey(k) {
+  return `a key named ${k}`;
+}
+
+// bad
+const obj = {
+  id: 5,
+  name: 'San Francisco',
+};
+obj[getKey('enabled')] = true;
+
+// good
+const obj = {
+  id: 5,
+  name: 'San Francisco',
+  [getKey('enabled')]: true,
+};
+```
+
+#### 1.12 Use object method shorthand.
+
+```js
+// bad
+const atom = {
+  value: 1,
+
+  addValue: function (value) {
+    return atom.value + value;
+  },
+};
+
+// good
+const atom = {
+  value: 1,
+
+  addValue(value) {
+    return atom.value + value;
+  },
+};
+```
+
+##### 1.13 Group your shorthand properties at the beginning of your object declaration.
+
+Why? It’s easier to tell which properties are using the shorthand.
+
+
+```js
+const anakinSkywalker = 'Anakin Skywalker';
+const lukeSkywalker = 'Luke Skywalker';
+
+// bad
+const obj = {
+  episodeOne: 1,
+  twoJediWalkIntoACantina: 2,
+  lukeSkywalker,
+  episodeThree: 3,
+  mayTheFourth: 4,
+  anakinSkywalker,
+};
+
+// good
+const obj = {
+  lukeSkywalker,
+  anakinSkywalker,
+  episodeOne: 1,
+  twoJediWalkIntoACantina: 2,
+  episodeThree: 3,
+  mayTheFourth: 4,
+};
+```
+
+##### 1.14 Only quote properties that are invalid identifiers.
+
+Why? In general we consider it subjectively easier to read. It improves syntax highlighting, and is also more easily optimized by many JS engines.
+
+```js
+// bad
+const bad = {
+  'foo': 3,
+  'bar': 4,
+  'data-blah': 5,
+};
+
+// good
+const good = {
+  foo: 3,
+  bar: 4,
+  'data-blah': 5,
+};
+```
 
 
 🍻🎉💊 Congrats for completing **Day 3** 🍻🎉💊
