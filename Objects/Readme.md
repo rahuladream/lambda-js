@@ -295,6 +295,43 @@ const good = {
 };
 ```
 
+##### 1.15 Do not call `Object.prototype` methods directly, such as `hasOwnProperty`, `propertyIsEnumerable`, and `isPrototypeOf`
+
+Why? These methods may be shadowed by properties on the object in question - consider `{ hasOwnProperty: false }` - or, the object may be a null object `(Object.create(null))`.
+
+```js
+// bad
+console.log(object.hasOwnProperty(key));
+
+// good
+console.log(Object.prototype.hasOwnProperty.call(object, key));
+
+// best
+const has = Object.prototype.hasOwnProperty; // cache the lookup once, in module scope.
+console.log(has.call(object, key));
+/* or */
+import has from 'has'; // https://www.npmjs.com/package/has
+console.log(has(object, key));
+```
+
+##### 1.16 Prefer the object spread operator over `Object.assign` to `shallow-copy` objects. Use the object `rest operator` to get a new object with certain properties omitted.
+
+```js
+// very bad
+const original = { a: 1, b: 2 };
+const copy = Object.assign(original, { c: 3 }); // this mutates `original` ಠ_ಠ
+delete copy.a; // so does this
+
+// bad
+const original = { a: 1, b: 2 };
+const copy = Object.assign({}, original, { c: 3 }); // copy => { a: 1, b: 2, c: 3 }
+
+// good
+const original = { a: 1, b: 2 };
+const copy = { ...original, c: 3 }; // copy => { a: 1, b: 2, c: 3 }
+
+const { a, ...noA } = copy; // noA => { b: 2, c: 3 }
+```
 
 🍻🎉💊 Congrats for completing **Day 3** 🍻🎉💊
 
